@@ -1,12 +1,12 @@
-<h1 align="center"> CNN's </h1> <br>
+<h1 align="center"> Removing Noise from Images Using Autoencoders </h1> <br>
 <p align="center">
   <!--<a href="https://gitpoint.co/"> -->
-    <img alt="Init" title="Presentation" src="https://i.imgur.com/FlVfwAA.png" width="450">
+    <img alt="Init" title="Presentation" src="https://i.imgur.com/lSSQQBI.png" width="450">
   </a>
 </p>
 
 <p align="center">
-  Image Classification Using CNNs: Cats vs Dogs
+  Removing Noise from Images Using Autoencoders
 </p>
 
 <!-- 
@@ -43,9 +43,18 @@
 
 ## Introduction
 
-Computer vision is an engineering discipline focused on developing software that can derive significance from visual data. As per a popular anecdote, computer vision's origins can be traced back to the 1960s when Professor Marvin Minsky of MIT tasked a team of undergraduate students with an intriguing summer project. The challenge presented to them was to affix a camera to a computer and enable the computer to articulate its observations of the surroundings.
+Autoencoders represent a paradigm shift from the conventional neural network. The goal of autoencoder is to learn a **Latent Representatioin** of the input. This representation is usually a compressed representation of the original input.
 
-In this repository we've created a Convolutional Neural Network to identify Cats or Dogs. Here, we created two models, the first model was created from 0, using Keras librery. In the second model, we created a pre-trained model using transfer learning from VGC16 model
+![SCHEMA](https://i.imgur.com/Vbvy73w.png)
+
+> The architecture of a typical autoencoder
+
+In this repo we have worked 4 differents models
+
+1. Simple autoencoder
+2. Denoising autoencoders
+3. Denoising deep autoencoders 
+4. Denoising documents with autoencoders
 
 **All project is in the folder *Notebook*.**
 
@@ -59,17 +68,13 @@ In this repository we've created a Convolutional Neural Network to identify Cats
 
 Principal's model feactures:
 
-- 2 models trained
-- ~80 % and ~90% accuracity
-- Model 1: 2 convolutional-max pooling layers, followed by two fully connected layers.
-- Model 2: transfer learning to leverage on the pretrained VGG16 network for our classification
+- 4 models trained
+- ~90% accuracity
+- Model 1: Basic autoencoder with 2 layers for image compresion
+- Model 2: Autoencoder with 4 layers
+- Model 3: Autoencoder with 6 layers
+- Model 4: Autoencoder with 6 layers and 12785 params.
 
-
-<p align="center">
-  <img src = "https://i.imgur.com/M5jDRmf.png" width=400>
-</p>
-
-> Model schematic
 -----
 
 ## Feedback
@@ -111,7 +116,8 @@ Please take a look at the [contributing guidelines](./CONTRIBUTING.md) for a det
 
 The models make strongly right predictions
 
-![results](https://i.imgur.com/ZGFRdIc.png)
+![results](https://i.imgur.com/lSSQQBI.png)
+![results2](https://i.imgur.com/vGs7kc8.png)
 
 <!--  ## Backers [![Backers on Open Collective](https://opencollective.com/git-point/backers/badge.svg)](#backers)
 
