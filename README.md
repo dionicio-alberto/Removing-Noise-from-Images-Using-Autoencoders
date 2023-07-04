@@ -58,9 +58,11 @@ In this repo we have worked 4 differents models
 
 **All project is in the folder *Notebook*.**
 
+<!-- 
 <p align="center">
   <img src = "https://i.imgur.com/nPgxtAq.jpeg", width="600">
 </p>
+-->
 
 -----
 
